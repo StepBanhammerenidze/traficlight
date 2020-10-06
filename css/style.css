@@ -1,0 +1,93 @@
+body{
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.phone{
+    height: 600px;
+    width: 600px;
+    background-color: darkblue;
+    border-radius: 0%;
+    margin: 0 auto;
+    font-size: 0;
+    
+}
+
+.red{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    animation-name: topin;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes topin{
+    0%{
+        top: -100px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.yellow{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    animation-name: bts;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+    .yellow:hover{
+       transform: rotateY(180deg)
+    }
+    @keyframes btn{
+        0%{
+            opacity: 0;
+        }
+        100%{
+           opacity: 1; 
+        }
+    }
+    .green{
+        background-color: green;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        position:relative ;
+        animation-name: Left;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        opacity: 1;
+    }   
+
+    @keyframes Left{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    
+    
+
